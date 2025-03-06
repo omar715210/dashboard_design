@@ -17,6 +17,10 @@
   padding: 10px;
 }
 
+.p-15{
+  padding: 15px;
+}
+
 .p-20{
   padding:20px;
 }
@@ -27,6 +31,10 @@
 
 .mt-0{
   margin-top: 0;
+}
+
+.w-full{
+  width: 100%;
 }
 /* end padding + margin */
 
@@ -61,6 +69,15 @@
   border-radius: 6px;
 }
 /* end border */
+/* start components  */
+.between-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* end components  */
+
 
 @media (max-width:767px){
   .hide-mobile{
