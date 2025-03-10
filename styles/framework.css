@@ -9,6 +9,10 @@
   --grey-color: #888;
 }
 
+.dark-mode .active{
+  background-color: #555;
+}
+
 .active{
   background-color: #f4f4f4;
 }
@@ -178,8 +182,16 @@
 /* end padding + margin */
 
 /* start color  */
+.dark-mode .bg-white{
+  background-color: #333;
+}
+
 .bg-white{
   background-color: white;
+}
+
+.dark-mode .bg-eee{
+  background-color: #666;
 }
 
 .bg-eee{
@@ -206,12 +218,28 @@
   background-color: var(--grey-color);
 }
 
+.bg-444{
+  background-color: #444;
+}
+
+.dark-mode .c-black{
+  color: white;
+}
+
 .c-black{
   color: black;
 }
 
+.dark-mode .c-grey{
+  color: #aaa;
+}
+
 .c-grey{
   color: var(--grey-color);
+}
+
+.dark-mode .c-white{
+  color: black;
 }
 
 .c-white{

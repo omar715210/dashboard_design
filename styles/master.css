@@ -7,6 +7,9 @@
   --green-color: #22c55e;
   --red-color: #f44336;
   --grey-color: #888;
+  --white-color: #fff;
+  --dark-mode: #333;
+  --scrollbar-bg: #fff;
 }
 
 html{
@@ -22,6 +25,12 @@ body{
   font-family: "Open Sans", sans-serif;
 }
 
+.dark-mode{
+  color: white;
+  background-color: #333;
+  --scrollbar-bg: #333;
+}
+
 *:focus{
   outline:none;
 }
@@ -35,7 +44,7 @@ a{
 }
 
 ::-webkit-scrollbar-track{
-  background-color: white;
+  background-color: var(--scrollbar-bg);
 }
 
 ::-webkit-scrollbar-thumb{
@@ -61,6 +70,10 @@ ul{
   box-shadow: 0 0 10px #ddd;
 }
 
+.dark-mode .sidebar{
+  box-shadow: 0 0 10px var(--dark-mode);
+}
+
 .sidebar > h3{
   margin-bottom: 50px;
   font-size:16px ;
@@ -76,6 +89,11 @@ ul{
       transform: translateX(-50%);
     }
 
+    .dark-mode .sidebar > h3::before,
+    .dark-mode .sidebar > h3::after{
+      background-color: white;
+    }
+
     .sidebar > h3::before{
       width: 100px;
       height: 2px;
@@ -89,6 +107,9 @@ ul{
       bottom: -30px;
       border: 5px solid white;
     }
+    .dark-mode .sidebar > h3::after{
+      border-color: #333;
+    }
 }
 
 .sidebar ul li a{
@@ -99,6 +120,11 @@ ul{
 .sidebar ul li a:hover,
 .sidebar ul li a:active{
   background-color: #f4f4f4;
+}
+
+.dark-mode .sidebar ul li a:hover,
+.dark-mode .sidebar ul li a:active{
+  background-color: #555;
 }
 
 .sidebar ul li a span{
@@ -122,6 +148,11 @@ ul{
 /* start content  */
 .content{
   overflow: hidden;
+}
+
+.dark-mode .head .search input{
+  background-color: #555;
+  caret-color: white;
 }
 
 .head .search::before{
@@ -155,6 +186,59 @@ ul{
   opacity: 0;
 }
 
+.head .icons .dark-light-btn{
+  width: 60px;
+  min-height: 28px;
+  border: 2px solid #aaa;
+  border-radius: 13px;
+  margin-right: 20px;
+  background-color: #eee;
+  padding: 2px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.dark-mode .head .icons .dark-light-btn{
+  background-color: #555;
+}
+
+.head .icons .dark-light-btn span{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2px;
+  font-size: 13px;
+  background-color: var(--blue-color);
+  padding: 4px;
+  color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+  width: 21px;
+  height: 21px;
+}
+
+.head .icons .dark-light-btn span::before{
+  font-family: var(--fa-style-family-classic);
+  content: '\f185';
+  font-weight: 900;
+}
+
+.dark-mode .head .icons .dark-light-btn span{
+  left: 32px;
+  background-color: #888;
+}
+
+.dark-mode .head .icons .dark-light-btn span::before{
+  content: '\f186';
+}
+
+.dark-mode .notification{
+  color: white;
+}
+
 .head .icons .notification::before{
   content: '';
   width: 10px;
@@ -172,9 +256,16 @@ ul{
   margin-left: 15px;
 }
 
+.dark-mode .content{
+  background-color: #555;
+}
 
 .content h1{
   margin: 20px 20px 40px;
+}
+
+.dark-mode .content h1{
+  color: white;
 }
 
 .content h1::before,
@@ -221,7 +312,7 @@ ul{
 }
 
 .welcome .intro img{
-  width: 170px;
+  width: 220px;
   margin-bottom: -10px;
 }
 
@@ -234,6 +325,11 @@ ul{
   box-shadow: 0 0 5px #ddd;
   margin-left: 20px;
   margin-top: -32px;
+}
+
+.dark-mode .welcome .avatar{
+  border-color: #222;
+  /* box-shadow: 0 0; */
 }
 
 .welcome .body{
@@ -249,6 +345,10 @@ ul{
   margin: 0 15px 15px auto;
   transition: 0.3s;
   cursor: pointer;
+}
+
+.dark-mode .welcome .visit{
+  color: white;
 }
 
 .welcome .visit:hover{
@@ -281,6 +381,10 @@ ul{
   margin-left: auto;
   transition: 0.3s;
   cursor: pointer;
+}
+
+.dark-mode .quick-draft .save{
+  color: white;
 }
 
 .quick-draft .save:hover{
@@ -539,6 +643,11 @@ ul{
   transition: 0.3s;
 }
 
+.dark-mode .social-media .box i,
+.dark-mode .social-media .box a{
+  color: white;
+}
+
 .social-media .box i:hover{
   transform: rotate(8deg);
 }
@@ -600,6 +709,10 @@ ul{
   font-weight: bold;
 }
 
+.dark-mode .projects table thead td{
+  background-color: #555;
+}
+
 .projects table td{
   padding: 15px;
   transition: 0.3s;
@@ -612,6 +725,10 @@ ul{
 
 .projects tbody tr:hover td{
   background-color: #faf7f7;
+}
+
+.dark-mode .projects tbody tr:hover td{
+  background-color: #555;
 }
 
 .projects tbody tr td:last-of-type{
@@ -632,6 +749,10 @@ ul{
 
 .projects table .label{
   font-size: 13px;
+}
+
+.dark-mode .projects table .label{
+  color: white;
 }
 /* end projects table  */
 
