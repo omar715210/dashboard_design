@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root{
   --blue-color: #0075ff;
   --blue-alt-color: #0d69d5;
@@ -1100,6 +1102,62 @@ ul{
   font-size: 13px;
 }
 /* End courses page  */
+/* Start friends page  */
+.friends-page {
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+}
+@media (max-width: 767px){
+  .friends-page{
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.friends-page .friend .contact{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.friends-page .friend .contact i{
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.friends-page .friend .contact i:hover{
+  background-color: var(--blue-color);
+  color: white;
+}
+
+.friends-page .friend .icons{
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.friends-page .friend .icons i{
+  margin-right: 5px;
+}
+
+.friends-page .friend .icons .vip{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  opacity: 0.3;
+}
+/* End friends page  */
 /* Start toggle box  */
 .toggle-checkbox{
   -webkit-appearance:none ;
