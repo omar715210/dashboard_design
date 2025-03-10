@@ -88,6 +88,10 @@
   margin: 0;
 }
 
+.m-10{
+  margin: 10px;
+}
+
 .m-15{
   margin: 15px;
 }
@@ -146,6 +150,10 @@
 
 .mb-20{
   margin-bottom: 20px;
+}
+
+.m-auto{
+  margin: auto;
 }
 
 .w-full{
