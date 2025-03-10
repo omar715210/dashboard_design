@@ -57,6 +57,10 @@
   padding:20px;
 }
 
+.pt{
+  padding-top: 10px;
+}
+
 .pt-15{
   padding-top: 15px;
 }
@@ -227,6 +231,10 @@
 .p-relative{
   position: relative;
 }
+
+.p-absolute{
+  position: absolute;
+}
 /* end position  */
 
 /* start font */
@@ -274,6 +282,10 @@
 
 .b-ccc{
   border: 1px solid #ccc;
+}
+
+.b-eee{
+  border: 1px solid #eee;
 }
 
 .bt-eee{
