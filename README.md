@@ -11,3 +11,4 @@ This project is a responsive **dashboard UI design** built with HTML, CSS, and J
 - Fully customizable UI
 
 ## Demo Link:
+https://omar715210.github.io/dashboard_design/
