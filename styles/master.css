@@ -777,10 +777,24 @@ ul{
   min-height: 150px;
 }
 
+.dark-mode .settings-page .close-message{
+  background-color: #444;
+  caret-color: white;
+}
+
+
+
 .settings-page .email{
   display: inline-flex;
   width: calc(100% - 80px);
+}
 
+
+
+
+.dark-mode .inp{
+  background-color: #444 !important;
+  caret-color: white !important;
 }
 
 .settings-page .social-boxes i{
@@ -793,12 +807,21 @@ ul{
   transition: 0.3s;
 }
 
+.dark-mode .settings-page .social-boxes i{
+  background-color: #444;
+}
+
 .settings-page .social-boxes input{
   height: 40px;
   background-color: #f6f6f6;
   border: 1px solid #ddd;
   border-radius: 0 6px 6px 0;
   padding-left: 10px;
+}
+
+.dark-mode .settings-page .social-boxes input{
+  background-color: #444;
+  caret-color: white;
 }
 
 .settings-page .social-boxes > div:focus-within i{
@@ -980,6 +1003,10 @@ ul{
   background-color: #f9f9f9;
 }
 
+.dark-mode .profile-page .info-box .box:hover{
+  background-color: #454545;
+}
+
 .profile-page .info-box .box > div{
   padding: 5px 10px;
 }
@@ -1021,6 +1048,10 @@ ul{
   border-radius: 6px;
   font-size: 14px;
   margin-bottom: 5px;
+}
+
+.dark-mode .profile-page .skills-card ul li span{
+  background-color: #444;
 }
 
 .profile-page .skills-card ul li span:not(:last-child){
